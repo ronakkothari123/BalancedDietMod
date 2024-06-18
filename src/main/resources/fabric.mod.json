@@ -1,31 +1,32 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "balanced-diet",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Balanced Diet Mod",
+	"description": "Balanced Diet Mod for Minecraft This mod encourages players to maintain a balanced diet in Minecraft. Players must consume a variety of foods to keep their hunger levels balanced, adding an extra layer of challenge and realism to the game. Stay healthy and enjoy a more challenging survival experience with the Balanced Diet Mod!",
 	"authors": [
-		"Me!"
+		"Shrihun Sankepally",
+		"Ronak Kothari"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/balanced-diet/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"io.github.overlordsiii.BalancedDiet"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"io.github.overlordsiii.BalancedDietClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"balanced-diet.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "balanced-diet.client.mixins.json",
 			"environment": "client"
 		}
 	],
